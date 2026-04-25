@@ -9,25 +9,25 @@ const trustItems = [
     icon: Shield,
     title: "30-Day Money-Back Guarantee On Every IPTV Subscription",
     description:
-      "Contact support within 30 days and every penny returns same-day. No forms, no retention scripts — the safety net that makes trying cheap IPTV completely risk-free.",
+      "Not convinced? Contact support within 30 days and every penny returns same-day. No forms, no retention scripts, no small print — a full refund that lets you test IPTV UK completely risk-free.",
   },
   {
     icon: Wifi,
     title: "99.9% Uptime On Strong IPTV Servers",
     description:
-      "A live status page tracks server health minute by minute. If uptime dips below 99.9 percent, service credits apply automatically — budget pricing on infrastructure that does not cut corners.",
+      "A live status page tracks performance minute by minute. If uptime falls below 99.9 percent, service credits apply automatically. Strong UK infrastructure is the foundation of every streaming claim.",
   },
   {
     icon: Lock,
-    title: "Built-In VPN — Premium IPTV Privacy Included Free",
+    title: "Built-In VPN — Premium IPTV Privacy At No Extra Cost",
     description:
-      "The VPN encrypts every stream with no latency penalty and no bandwidth cap. No logs, no separate app, no add-on fee — privacy at the same quality level as services charging three times more.",
+      "The VPN encrypts every stream with zero latency penalty. No bandwidth cap, no logs, no separate subscription — premium-grade privacy included in every plan from day one.",
   },
   {
     icon: ServerCog,
-    title: "24/7 UK Support — British IPTV Help That Never Sleeps",
+    title: "24/7 UK Support — A British IPTV Service That Never Closes",
     description:
-      "A named British team answers live chat, WhatsApp and email around the clock. Average first response: under four minutes — premium support delivered at a budget price.",
+      "A named British team answers live chat, WhatsApp and email around the clock. Average first response: under four minutes — support quality that matches the streaming quality.",
   },
 ];
 
@@ -44,14 +44,14 @@ export default function TrustSection() {
           className="text-center mb-16"
         >
           <span className="inline-block rounded-full bg-emerald-50 border border-emerald-200 px-4 py-1.5 text-sm font-medium text-emerald-700 mb-4">
-            Four Hard Promises
+            Four Commitments You Can Verify
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            The Cheap IPTV Guarantee &mdash; Four Promises{" "}
-            <span className="gradient-text">That Protect Your Money</span>
+            The IPTV UK Guarantee &mdash; Four Commitments{" "}
+            <span className="gradient-text">You Can Verify</span>
           </h2>
           <p className="mx-auto max-w-xl text-lg text-muted">
-            Cheap does not mean risky. Every commitment below is published, measured and backed by a full{" "}
+            Every claim on this page is published, measured and backed by a full{" "}
             <Link href="/refund" className="text-violet-600 hover:text-violet-700 underline-offset-2 hover:underline">
               same-day refund
             </Link>.

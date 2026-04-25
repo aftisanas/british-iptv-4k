@@ -26,17 +26,18 @@ export default function FeaturesSection() {
           className="text-center lg:mb-12 mb-10"
         >
           <span className="inline-block rounded-full bg-violet-50 border border-violet-200 px-4 py-1.5 text-sm font-medium text-violet-700 mb-4">
-            Budget Pricing, Premium Features
+            Built For The UK · Everything Included
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Eight Reasons This Cheap IPTV Subscription{" "}
-            <span className="gradient-text">Outperforms Services Costing Three Times More</span>
+            Eight Pillars Of The IPTV UK Experience —{" "}
+            <span className="gradient-text">Everything Included From Day One</span>
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-muted">
-            Budget pricing does not mean budget quality. Every card below covers a feature that costs extra elsewhere — included here at no additional charge with every{" "}
+            No bolt-ons, no hidden tiers, no surprise charges. Every feature below ships with every{" "}
             <SectionLink href="/#pricing" className="text-violet-600 hover:text-violet-700 underline-offset-2 hover:underline">
-              cheap IPTV subscription
-            </SectionLink>.
+              IPTV UK subscription
+            </SectionLink>{" "}
+            at no additional cost.
           </p>
         </motion.div>
 

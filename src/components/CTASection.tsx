@@ -56,15 +56,15 @@ export default function CTASection() {
           </motion.div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
-            Stop Overpaying &mdash; Get Cheap IPTV And{" "}
-            <span className="gradient-text-hero">Keep More Money In Your Pocket</span>
+            Join 50,000 British Homes &mdash; Get IPTV UK And{" "}
+            <span className="gradient-text-hero">Stream Tonight</span>
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-gray-300/90 mb-10 leading-relaxed">
-            Over 50,000 UK homes already switched to the smartest deal in British television. The 24-month{" "}
+            The search for reliable television streaming in Britain ends here. The 24-month{" "}
             <SectionLink href="/#pricing" className="text-cyan-300 hover:text-cyan-200 underline-offset-2 hover:underline">
-              cheap IPTV plan
+              IPTV UK plan
             </SectionLink>{" "}
-            locks the lowest rate while delivering 37,000 channels, 198,000 films, 4K UHD, a built-in VPN and five screens. Every order ships with a{" "}
+            locks the lowest rate while delivering 37,000 channels, 198,000 films, native 4K, built-in VPN and five simultaneous screens. Your first channel plays sixty seconds after payment, with a{" "}
             <Link href="/refund" className="text-cyan-300 hover:text-cyan-200 underline-offset-2 hover:underline">
               30-day refund guarantee
             </Link>{" "}
@@ -80,7 +80,7 @@ export default function CTASection() {
               className="group relative flex items-center gap-2.5 rounded-2xl bg-gradient-to-r from-violet-600 via-purple-600 to-cyan-500 px-8 py-4 text-base font-semibold text-white transition-all hover:shadow-2xl hover:shadow-purple-500/30 active:scale-[0.98] w-full sm:w-auto justify-center"
             >
               <Play className="h-5 w-5 fill-current" />
-              Get Cheap IPTV Now — From £4.99
+              Get IPTV UK Now — From £12.99
               <div className="absolute inset-0 rounded-2xl bg-white/10 opacity-0 transition-opacity group-hover:opacity-100" />
             </SectionLink>
             <SectionLink
@@ -93,7 +93,7 @@ export default function CTASection() {
           </div>
 
           <p className="mt-8 text-sm text-gray-400">
-            Questions? Email support@cheap-iptv.tv — average reply under four minutes.
+            Questions? WhatsApp +44 20 0000 0000 or email support@iptv-uk-4k.com — average reply under four minutes.
           </p>
         </motion.div>
       </div>

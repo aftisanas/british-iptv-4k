@@ -18,7 +18,7 @@ export default function Footer() {
               <div className="relative h-12 w-12 shrink-0">
                 <Image
                   src="/cheap-iptv.webp"
-                  alt="Cheap IPTV logo"
+                  alt="IPTV UK 4K logo"
                   fill
                   sizes="48px"
                   loading="lazy"
@@ -26,11 +26,11 @@ export default function Footer() {
                 />
               </div>
               <span className="text-lg font-bold text-foreground">
-                Cheap<span className="gradient-text"> IPTV </span>UK
+                IPTV<span className="gradient-text"> UK </span>4K
               </span>
             </Link>
             <p className="text-sm text-muted leading-relaxed mb-6">
-              The cheap IPTV subscription 50,000 UK homes trust. 37,000 live channels, 198,000 films and series, 4K UHD and built-in VPN — from £4.99/month.
+              The IPTV UK service 50,000 British homes trust. 37,000 live channels, 198,000 films and series, native 4K UHD and built-in VPN — from £12.99/month.
             </p>
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-sm text-muted">
@@ -88,7 +88,7 @@ export default function Footer() {
         <div className="border-t border-violet-100/50 py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-xs text-muted text-center sm:text-left">
-              © {new Date().getFullYear()} cheap-iptv.tv — Cheap IPTV | Cheapest IPTV UK | Budget IPTV Service | Buy IPTV UK
+              © {new Date().getFullYear()} iptv-uk-4k.com — IPTV UK | Best IPTV UK | UK IPTV Subscription | Buy IPTV UK
             </p>
             <p className="text-xs text-gray-500 text-center sm:text-right max-w-md">
               {SITE_NAME} is not affiliated with any television networks or content providers.

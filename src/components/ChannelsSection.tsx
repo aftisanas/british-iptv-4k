@@ -20,18 +20,18 @@ export default function ChannelsSection() {
           className="text-center mb-16"
         >
           <span className="inline-block rounded-full bg-violet-50 border border-violet-200 px-4 py-1.5 text-sm font-medium text-violet-700 mb-4">
-            Budget Pricing, Premium Library
+            37,000 Feeds Organised For British Viewers
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            What 37,000 Channels Look Like Inside A{" "}
-            <span className="gradient-text">Cheap IPTV Subscription</span>
+            Inside The IPTV UK Channel Guide —{" "}
+            <span className="gradient-text">37,000 Feeds Organised For British Viewers</span>
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-muted">
-            A single{" "}
+            The channel library is organised by category and region, with a fully searchable EPG and 7-day catch-up on selected feeds. A single{" "}
             <SectionLink href="/#pricing" className="text-violet-600 hover:text-violet-700 underline-offset-2 hover:underline">
-              cheap IPTV UK plan
+              IPTV UK plan
             </SectionLink>{" "}
-            opens every category below at once — no add-ons, no bolt-ons, no hidden fees.
+            opens every category below at once.
           </p>
         </motion.div>
 

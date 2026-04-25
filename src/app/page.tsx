@@ -14,6 +14,7 @@ import {
   PRICING_PLANS,
   SITE_NAME,
   SITE_URL,
+  TESTIMONIALS,
 } from "@/lib/constants";
 
 export default function HomePage() {
@@ -21,7 +22,8 @@ export default function HomePage() {
   const websiteId = `${SITE_URL}/#website`;
   const webpageId = `${SITE_URL}/#webpage`;
   const productId = `${SITE_URL}/#product`;
-  const logoUrl = `${SITE_URL}/buy-iptv-uk.webp`;
+  const breadcrumbId = `${SITE_URL}/#breadcrumb`;
+  const logoUrl = `${SITE_URL}/cheap-iptv.webp`;
 
   return (
     <>
@@ -47,11 +49,15 @@ export default function HomePage() {
                 "@type": "Organization",
                 "@id": organizationId,
                 name: SITE_NAME,
+                alternateName: "IPTV UK",
                 url: SITE_URL,
                 logo: {
                   "@type": "ImageObject",
                   url: logoUrl,
                 },
+                description:
+                  "IPTV UK service for British homes — 37,000 live channels, 198,000 films and series, native 4K UHD streaming and built-in VPN, from £12.99.",
+                areaServed: { "@type": "Country", name: "United Kingdom" },
                 contactPoint: {
                   "@type": "ContactPoint",
                   contactType: "customer service",
@@ -74,7 +80,7 @@ export default function HomePage() {
                 "@type": "WebPage",
                 "@id": webpageId,
                 url: SITE_URL,
-                name: "Cheap IPTV 2026 | Cheapest UK IPTV Service From £4.99",
+                name: "IPTV UK 2026 | #1 UK IPTV Subscription 4K From £12.99",
                 inLanguage: "en-GB",
                 isPartOf: {
                   "@id": websiteId,
@@ -82,8 +88,29 @@ export default function HomePage() {
                 about: {
                   "@id": organizationId,
                 },
+                breadcrumb: {
+                  "@id": breadcrumbId,
+                },
                 description:
-                  "Cheap IPTV that never feels cheap. 37,000 channels, 4K UHD, built-in VPN, five screens and a 30-day guarantee — the best-value IPTV subscription in Britain.",
+                  "IPTV UK built for British viewers — 37,000 channels, 198,000 films and series, native 4K UHD, built-in VPN, five screens and a 30-day money-back guarantee.",
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": breadcrumbId,
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Home",
+                    item: SITE_URL,
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "IPTV UK",
+                    item: `${SITE_URL}/#features`,
+                  },
+                ],
               },
             ],
           }),
@@ -96,15 +123,15 @@ export default function HomePage() {
             "@context": "https://schema.org",
             "@type": "Product",
             "@id": productId,
-            name: `${SITE_NAME} Subscription`,
+            name: "IPTV UK Subscription",
             url: SITE_URL,
             image: [logoUrl],
             description:
-              "Cheap IPTV subscription with 37,000+ live channels, 198,000+ on-demand titles, 4K UHD, five screens and built-in VPN — from £4.99.",
+              "IPTV UK subscription with 37,000+ live channels, 198,000+ on-demand films and series, native 4K UHD, five simultaneous screens and built-in VPN — from £12.99.",
             brand: { "@type": "Brand", name: SITE_NAME },
             offers: PRICING_PLANS.map((plan) => ({
               "@type": "Offer",
-              name: `${plan.name} Plan`,
+              name: `${plan.name} IPTV UK Plan`,
               price: plan.price.toFixed(2),
               priceCurrency: "GBP",
               availability: "https://schema.org/InStock",
@@ -133,6 +160,26 @@ export default function HomePage() {
                 "@type": "Answer",
                 text: item.answer,
               },
+            })),
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": TESTIMONIALS.map((t, i) => ({
+              "@type": "Review",
+              "@id": `${SITE_URL}/#review-${i + 1}`,
+              itemReviewed: { "@id": productId },
+              author: { "@type": "Person", name: `${t.name} — ${t.location}` },
+              reviewRating: {
+                "@type": "Rating",
+                ratingValue: t.rating.toString(),
+                bestRating: "5",
+              },
+              reviewBody: t.text,
             })),
           }),
         }}

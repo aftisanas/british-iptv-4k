@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import ContactContent from "./ContactContent";
 
 export const metadata: Metadata = {
-  title: "Contact Premium IPTV UK — 24/7 IPTV Service Support",
+  title: "Contact IPTV UK 4K — 24/7 British IPTV Support",
   description:
-    "Get in touch with Premium IPTV UK. 24/7 IPTV subscription support via WhatsApp, email, and live chat. The best IPTV providers offer real support — we're here to help with setup, troubleshooting, and all your IPTV needs.",
+    "Get in touch with the IPTV UK 4K support team. 24/7 IPTV subscription support via WhatsApp, email and live chat. A named British team that answers in under four minutes — setup, troubleshooting and account help all in one place.",
   alternates: { canonical: "/contact" },
 };
 

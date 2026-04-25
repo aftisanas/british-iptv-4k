@@ -106,14 +106,14 @@ export default function PricingSection() {
         >
           <span className="inline-flex items-center gap-2 rounded-full bg-violet-50 border border-violet-200 px-5 py-2 text-sm font-semibold text-violet-700 mb-5">
             <Gem className="h-4 w-4" />
-            Four Price Points, One Premium IPTV Experience
+            Four Subscription Tiers, One Complete Package
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-5">
-            Cheap IPTV Plans &mdash;{" "}
-            <span className="gradient-text">Four Price Points, One Premium IPTV Experience</span>
+            IPTV UK Plans &mdash;{" "}
+            <span className="gradient-text">Four Subscription Tiers, One Complete Package</span>
           </h2>
           <p className="mx-auto max-w-2xl text-base text-muted leading-relaxed">
-            Every IPTV subscription delivers the identical 37,000-channel library, 4K UHD, built-in VPN and five simultaneous screens. The only difference is commitment length and the discount that comes with it.
+            Every plan runs on the same UK infrastructure with the same 37,000-channel library, native 4K UHD, built-in VPN and five simultaneous screens. The only variable is commitment length and the discount that comes with it.
           </p>
         </motion.div>
 
@@ -256,9 +256,9 @@ export default function PricingSection() {
           className="mt-14 flex flex-wrap items-center justify-center gap-6 lg:gap-10"
         >
           {[
-            { icon: Shield, label: "SSL-secured Stripe & PayPal checkout" },
+            { icon: Shield, label: "SSL-secured Stripe & PayPal · GBP pricing" },
             { icon: CreditCard, label: "30-day money-back guarantee" },
-            { icon: Star, label: "Instant delivery" },
+            { icon: Star, label: "60-second activation" },
           ].map((item) => (
             <div key={item.label} className="flex items-center gap-2 text-sm text-muted">
               <item.icon className="h-4 w-4 text-violet-500/60" />
