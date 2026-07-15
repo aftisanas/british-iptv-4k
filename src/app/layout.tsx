@@ -23,11 +23,11 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "British IPTV 2026 | Premium IPTV UK Service From £8.66/mo",
+    default: "British IPTV | UK IPTV Subscription From £8.66/mo — 37,000 Channels",
     template: "%s | British IPTV 4K",
   },
   description:
-    "British IPTV built for UK homes. 37,000 channels, 4K UHD, built-in VPN, 24/7 support. Fast activation, strong servers. Buy IPTV from £8.66/month. 30-day refund.",
+    "British IPTV built for UK homes. 37,000 live channels, 198,000 on-demand films and series, native 4K UHD and 24/7 UK support. From £8.66/month with a 30-day money-back guarantee.",
   keywords: [
     "british iptv",
     "iptv uk",
@@ -37,12 +37,9 @@ export const metadata: Metadata = {
     "iptv service",
     "iptv reviews",
     "buy iptv",
-    "strong iptv",
     "fast iptv",
-    "premium iptv",
     "cheap iptv subscription",
     "iptv uk 4k",
-    "premium iptv uk",
     "uk iptv subscription",
   ],
   authors: [{ name: "British IPTV 4K" }],
@@ -73,9 +70,9 @@ export const metadata: Metadata = {
     locale: "en_GB",
     siteName: "British IPTV 4K",
     url: SITE_URL,
-    title: "British IPTV 2026 — Best IPTV UK | Buy Premium IPTV Direct",
+    title: "British IPTV — UK IPTV Subscription From £8.66/mo | 37,000 Channels",
     description:
-      "The British IPTV service trusted by 50,000 UK households. 37,000 channels, 198,000 films, 4K streaming, VPN included and a cheap IPTV subscription from £8.66/month.",
+      "British IPTV built for UK homes. 37,000 live channels, 198,000 films and series, native 4K UHD and five simultaneous screens — from £8.66/month with a 30-day money-back guarantee.",
     images: [
       {
         url: "/british-iptv.webp",
@@ -87,9 +84,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "British IPTV 2026 — Best IPTV UK | Buy Premium IPTV Direct",
+    title: "British IPTV — UK IPTV Subscription From £8.66/mo | 37,000 Channels",
     description:
-      "British IPTV for UK homes. 37,000 channels, 4K UHD, built-in VPN, 24/7 support. Fast activation, strong servers. Buy IPTV from £8.66/mo. 30-day refund.",
+      "British IPTV for UK homes. 37,000 live channels, 198,000 films and series, native 4K UHD and 24/7 UK support — from £8.66/month with a 30-day money-back guarantee.",
     images: ["/british-iptv.webp"],
   },
   robots: {

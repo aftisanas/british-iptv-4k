@@ -10,7 +10,7 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative h-[104vh] min-h-[640px] flex flex-col overflow-hidden"
+      className="relative min-h-[100dvh] md:h-[104vh] md:min-h-[840px] flex flex-col overflow-hidden"
     >
       {/* ── Deep premium gradient background ── */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0a0118] via-[#1a0a3e] to-[#0c1445]" />
@@ -70,10 +70,10 @@ export default function HeroSection() {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-bold tracking-tight leading-[1.1] mb-2"
         >
-          <span className="text-white">British IPTV 2026 — Premium IPTV</span>
+          <span className="text-white">British IPTV Built For UK Homes</span>
           <br />
-          <span className="text-white">Subscription Built </span>
-          <span className="gradient-text-hero">For UK Homes</span>
+          <span className="text-white">— </span>
+          <span className="gradient-text-hero">37,000 Live Channels</span>
         </motion.h1>
 
         {/* Subtitle */}
@@ -83,7 +83,7 @@ export default function HeroSection() {
           transition={{ duration: 0.7, delay: 0.18 }}
           className="text-base sm:text-lg text-gray-300/90 max-w-3xl mb-3 px-2 sm:px-0"
         >
-          A premium IPTV service routed through UK servers, delivering 37,000 live channels and 198,000 on-demand titles in 4K UHD to every screen in your home. Over 50,000 British viewers stream here — rated 4.9/5.
+          British IPTV for UK homes — 37,000 live channels, 198,000 on-demand films and series, native 4K UHD and five simultaneous screens. Cancel any time inside 30 days for a full refund.
         </motion.p>
 
         {/* Promo banner — replaces hero device image */}
@@ -108,7 +108,7 @@ export default function HeroSection() {
             className="group relative flex items-center gap-2.5 rounded-2xl bg-gradient-to-r from-violet-600 via-purple-600 to-cyan-500 px-7 py-3.5 text-sm sm:text-base font-semibold text-white shadow-lg shadow-purple-900/40 transition-all hover:shadow-2xl hover:shadow-purple-500/40 active:scale-[0.98] w-full sm:w-auto justify-center"
           >
             <Play className="h-5 w-5 fill-current" />
-            <span>Get Your British IPTV Plan — From £8.66/mo</span>
+            <span>Get Your British IPTV Plan — From £4.17/mo</span>
             <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             <div className="absolute inset-0 rounded-2xl bg-white/10 opacity-0 transition-opacity group-hover:opacity-100" />
           </SectionLink>

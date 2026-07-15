@@ -5,7 +5,6 @@ import FeaturesSection from "@/components/FeaturesSection";
 import PricingSection from "@/components/PricingSection";
 import DevicesSection from "@/components/DevicesSection";
 import ChannelsSection from "@/components/ChannelsSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
 import FAQSection from "@/components/FAQSection";
 import TrustSection from "@/components/TrustSection";
 import CTASection from "@/components/CTASection";
@@ -15,7 +14,6 @@ import {
   PRICING_PLANS,
   SITE_NAME,
   SITE_URL,
-  TESTIMONIALS,
 } from "@/lib/constants";
 
 export default function HomePage() {
@@ -35,7 +33,6 @@ export default function HomePage() {
       <PricingSection />
       <DevicesSection />
       <ChannelsSection />
-      <TestimonialsSection />
       <FAQSection />
       <TrustSection />
       <CTASection />
@@ -58,8 +55,8 @@ export default function HomePage() {
                   url: logoUrl,
                 },
                 description:
-                  "British IPTV service for UK homes — 37,000 live channels, 198,000 films and series, native 4K UHD streaming and built-in VPN, from £8.66/month.",
-                slogan: "Premium British IPTV built for UK homes.",
+                  "British IPTV service for UK homes — 37,000 live channels, 198,000 films and series, native 4K UHD streaming and five simultaneous screens, from £8.66/month with a 30-day money-back guarantee.",
+                slogan: "British IPTV built for UK homes.",
                 areaServed: { "@type": "Country", name: "United Kingdom" },
                 knowsAbout: [
                   "British IPTV",
@@ -67,7 +64,6 @@ export default function HomePage() {
                   "IPTV subscription",
                   "4K UHD streaming",
                   "UK television channels",
-                  "IPTV free trial",
                 ],
                 contactPoint: {
                   "@type": "ContactPoint",
@@ -91,7 +87,7 @@ export default function HomePage() {
                 "@type": "WebPage",
                 "@id": webpageId,
                 url: SITE_URL,
-                name: "British IPTV 2026 | Premium IPTV UK Service From £8.66/mo",
+                name: "British IPTV | UK IPTV Subscription From £8.66/mo — 37,000 Channels",
                 inLanguage: "en-GB",
                 isPartOf: {
                   "@id": websiteId,
@@ -103,7 +99,7 @@ export default function HomePage() {
                   "@id": breadcrumbId,
                 },
                 description:
-                  "British IPTV built for UK homes — 37,000 channels, 198,000 films and series, native 4K UHD, built-in VPN, five screens and a 30-day money-back guarantee.",
+                  "British IPTV built for UK homes — 37,000 channels, 198,000 films and series, native 4K UHD, five simultaneous screens and a 30-day money-back guarantee.",
                 primaryImageOfPage: {
                   "@type": "ImageObject",
                   url: logoUrl,
@@ -146,7 +142,7 @@ export default function HomePage() {
             url: SITE_URL,
             image: [logoUrl],
             description:
-              "British IPTV subscription with 37,000+ live channels, 198,000+ on-demand films and series, native 4K UHD, five simultaneous screens and built-in VPN — from £8.66/month.",
+              "British IPTV subscription with 37,000+ live channels, 198,000+ on-demand films and series, native 4K UHD and five simultaneous screens — from £8.66/month with a 30-day money-back guarantee.",
             brand: { "@type": "Brand", name: SITE_NAME },
             category: "IPTV subscription",
             offers: PRICING_PLANS.map((plan) => ({
@@ -159,12 +155,6 @@ export default function HomePage() {
               itemCondition: "https://schema.org/NewCondition",
               url: `${SITE_URL}/#pricing`,
             })),
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "6",
-              bestRating: "5",
-            },
           }),
         }}
       />
@@ -181,26 +171,6 @@ export default function HomePage() {
                 "@type": "Answer",
                 text: item.answer,
               },
-            })),
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@graph": TESTIMONIALS.map((t, i) => ({
-              "@type": "Review",
-              "@id": `${SITE_URL}/#review-${i + 1}`,
-              itemReviewed: { "@id": productId },
-              author: { "@type": "Person", name: `${t.name} — ${t.location}` },
-              reviewRating: {
-                "@type": "Rating",
-                ratingValue: t.rating.toString(),
-                bestRating: "5",
-              },
-              reviewBody: t.text,
             })),
           }),
         }}

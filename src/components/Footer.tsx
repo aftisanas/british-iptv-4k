@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
 import { Mail, MapPin } from "lucide-react";
@@ -30,13 +28,16 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-sm text-muted leading-relaxed mb-6">
-              The British IPTV service trusted by 50,000 UK households. 37,000 live channels, 198,000 films and series, native 4K UHD and built-in VPN — from £8.66/month.
+              British IPTV built for UK homes. 37,000 live channels, 198,000 films and series, native 4K UHD and five simultaneous screens — from £4.17/month, with a 30-day money-back guarantee.
             </p>
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-sm text-muted">
                 <Mail className="h-4 w-4 text-violet-500/60" />
                 <span>{CONTACT_EMAIL}</span>
               </div>
+              <p className="text-xs text-muted/80 leading-relaxed pl-6 -mt-1">
+                Support for british-iptv-4k.com is handled by our sister brand&rsquo;s shared UK support desk — replies come from this mailbox.
+              </p>
               <div className="flex items-center gap-2 text-sm text-muted">
                 <MapPin className="h-4 w-4 text-violet-500/60" />
                 <span>London, United Kingdom</span>
@@ -107,7 +108,7 @@ export default function Footer() {
         <div className="border-t border-violet-100/50 py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-xs text-muted text-center sm:text-left">
-              © {new Date().getFullYear()} british-iptv-4k.com — British IPTV | Premium IPTV UK | Best IPTV Provider | Buy IPTV UK
+              © {new Date().getFullYear()} british-iptv-4k.com — British IPTV | IPTV Subscription UK | Best IPTV Provider | Buy IPTV UK
             </p>
             <p className="text-xs text-gray-500 text-center sm:text-right max-w-md">
               {SITE_NAME} is not affiliated with any television networks or content providers.

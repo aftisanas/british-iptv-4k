@@ -7,7 +7,7 @@ const KEY_FACTS: { label: string; value: string }[] = [
   { label: "Maximum quality", value: "4K UHD" },
   { label: "Simultaneous screens", value: "5" },
   { label: "Starting price", value: "£8.66/month (£25.99 per 3 months)" },
-  { label: "Server location", value: "United Kingdom" },
+  { label: "EPG timezone", value: "GMT/UK" },
   { label: "Guarantee", value: "30-day money-back" },
 ];
 
@@ -21,24 +21,19 @@ export default function KeyFactsSection() {
 
         {/* Answer-first summary — kept concise and factual for accurate quoting */}
         <p className="text-lg text-muted leading-relaxed max-w-3xl mb-4">
-          British IPTV 4K is a UK-based IPTV service that streams 37,000+ live channels and
+          British IPTV 4K is a UK-focused IPTV service that streams 37,000+ live channels and
           198,000+ on-demand films and series in up to 4K UHD over your broadband connection,
-          instead of a satellite dish or aerial. Every plan includes five simultaneous screens, a
-          built-in VPN and a 30-day money-back guarantee, starting from £8.66 per month.
+          instead of a satellite dish or aerial. Every plan includes five simultaneous screens
+          and a 30-day money-back guarantee, starting from £8.66 per month.
         </p>
         <p className="text-base text-gray-600 leading-relaxed max-w-3xl mb-10">
-          All streams are served from data centres inside the United Kingdom, so live sport stays
-          low-latency and the programme guide is locked to UK time with British channels listed
-          first. It works on Amazon Fire Stick, Smart TVs, Android, iOS, MAG and Formuler boxes and
-          computers. New customers can{" "}
-          <Link href="/iptv-free-trial" className="text-violet-600 hover:underline">
-            request a free trial
-          </Link>{" "}
-          before choosing an{" "}
+          The programme guide is locked to UK time with British channels listed first, and the
+          service works on Amazon Fire Stick, Smart TVs, Android, iOS, MAG and Formuler boxes and
+          computers. Choose an{" "}
           <Link href="/iptv-subscription-uk" className="text-violet-600 hover:underline">
             IPTV subscription plan
-          </Link>
-          .
+          </Link>{" "}
+          — cancel any time inside 30 days for a full refund.
         </p>
 
         {/* Extraction-friendly key facts (definition list) */}

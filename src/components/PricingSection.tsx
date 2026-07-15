@@ -110,10 +110,10 @@ export default function PricingSection() {
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-5">
             British IPTV Plans &mdash;{" "}
-            <span className="gradient-text">Cheap IPTV Subscriptions To Premium IPTV</span>
+            <span className="gradient-text">One Service, Four Terms</span>
           </h2>
           <p className="mx-auto max-w-2xl text-base text-muted leading-relaxed">
-            One service, four terms. Channels, 4K and VPN stay identical on every tier. The only variable is commitment length — and savings.
+            Channels, native 4K UHD and five simultaneous screens stay identical on every tier. The only variable is commitment length — and savings.
           </p>
         </motion.div>
 
@@ -273,6 +273,7 @@ export default function PricingSection() {
         onClose={() => setSelectedPlan(null)}
         planName={selectedPlan ? toAccessLabel(selectedPlan.name) : ""}
         planPrice={selectedPlan?.price ?? 0}
+        proxyPrice={selectedPlan?.proxyPrice ?? 0}
       />
     </section>
   );

@@ -7,24 +7,24 @@ import SectionLink from "@/components/SectionLink";
 export const metadata: Metadata = {
   title: "IPTV Subscription UK — Plans From £8.66/Month, No Contract",
   description:
-    "Compare UK IPTV subscription plans: 37,000+ live channels, 198,000+ films, native 4K UHD, five screens and built-in VPN. From £25.99 per 3 months with a 30-day money-back guarantee.",
+    "Compare UK IPTV subscription plans: 37,000+ live channels, 198,000+ films, native 4K UHD, five screens and an optional Secure Proxy add-on. From £25.99 per 3 months with a 30-day money-back guarantee.",
   alternates: { canonical: "/iptv-subscription-uk" },
   openGraph: {
     title: "IPTV Subscription UK — Plans From £8.66/Month, No Contract",
     description:
-      "Compare UK IPTV subscription plans: 37,000+ channels, 4K UHD, five screens, built-in VPN, 30-day money-back guarantee.",
+      "Compare UK IPTV subscription plans: 37,000+ channels, 4K UHD, five screens, optional Secure Proxy add-on and a 30-day money-back guarantee.",
     url: `${SITE_URL}/iptv-subscription-uk`,
     type: "website",
   },
 };
 
 const INCLUDED = [
-  "37,000+ live channels — every major UK broadcaster plus 17,000+ international feeds",
+  "37,000+ live channels covering the main UK broadcasters plus 17,000+ international feeds",
   "198,000+ films, series and documentaries on demand",
   "Native 4K UHD wherever the broadcaster transmits it, on every plan",
   "Five simultaneous screens on a single account",
   "Full EPG locked to UK time with 7-day catch-up",
-  "Built-in VPN at no extra cost",
+  "Optional Secure Proxy add-on for extra privacy (from £4.75/term)",
   "24/7 UK-based support with sub-4-minute first response",
   "30-day money-back guarantee, no contract, cancel anytime",
 ];
@@ -43,12 +43,12 @@ const SUB_FAQS = [
   {
     question: "Which is the best IPTV subscription for UK viewers?",
     answer:
-      "The best subscription is one served from UK data centres with full British channel coverage, a GMT-locked EPG, and a genuine refund policy. British IPTV 4K ticks all three, which is why it tops our 2026 comparison of UK streaming options.",
+      "The best subscription is one built for UK-relevant viewing with full British channel coverage, a GMT-locked EPG and a genuine refund policy. British IPTV 4K ticks all three, which is why it tops our comparison of UK streaming options.",
   },
   {
     question: "Can I try the service before subscribing?",
     answer:
-      "Yes — request a free trial and test the full service on your own devices before paying. See the IPTV free trial page for how it works.",
+      "Every new subscription is covered by a 30-day money-back guarantee — sign up, test the full service on your own devices, and request a refund inside 30 days if it is not right for you.",
   },
 ];
 
@@ -86,18 +86,18 @@ export default function IptvSubscriptionUkPage() {
         <p className="text-lg text-muted leading-relaxed mb-4">
           A UK IPTV subscription with{" "}
           <Link href="/" className="text-primary hover:underline font-medium">British IPTV</Link>{" "}
-          works differently from Sky or Virgin: there are no channel packs, no add-ons and no
-          contract. Every plan — from 3 to 24 months — unlocks the identical full service. The only
-          decision is how long you want to lock in your price.
+          works differently from traditional satellite or cable TV: there are no channel packs, no
+          add-on tiers and no contract. Every plan — from 3 to 24 months — unlocks the identical
+          full service. The only decision is how long you want to lock in your price.
         </p>
         <p className="text-base text-gray-600 leading-relaxed mb-10">
-          All streams are served from data centres on British soil, so latency stays low for live
-          sport and the programme guide matches UK time exactly.
+          The programme guide is locked to UK time so British channels sit at the top of every list
+          and regional variants match your postcode.
         </p>
 
         {/* Plans table */}
         <h2 className="text-2xl font-bold text-foreground mb-6">
-          UK IPTV Subscription Plans &amp; Prices (2026)
+          UK IPTV Subscription Plans &amp; Prices
         </h2>
         <div className="overflow-x-auto mb-6">
           <table className="w-full text-sm border-collapse">
@@ -160,18 +160,18 @@ export default function IptvSubscriptionUkPage() {
                 Why A UK-Based IPTV Subscription Beats Offshore Resellers
               </h2>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Most cheap IPTV subscriptions resell streams from servers in mainland Europe or
+                Many cheap IPTV subscriptions resell streams from servers in mainland Europe or
                 further afield. That is why they buffer at Saturday 3pm and why their guides run an
-                hour off. Streams here originate inside the UK, which keeps live sport latency low
-                and regional channels correct for your postcode. Not sure yet? Start with the{" "}
-                <Link href="/iptv-free-trial" className="text-primary hover:underline">
-                  IPTV free trial
-                </Link>{" "}
-                or read the{" "}
+                hour off. British IPTV 4K is built for UK-relevant viewing, with regional channels
+                mapped to your postcode and the EPG locked to UK time. Not sure yet? Read the{" "}
                 <Link href="/blog/best-iptv-uk-guide-2026" className="text-primary hover:underline">
-                  best IPTV UK 2026 comparison
-                </Link>
-                .
+                  best IPTV UK comparison
+                </Link>{" "}
+                or browse the{" "}
+                <SectionLink href="/#pricing" className="text-primary hover:underline">
+                  pricing plans
+                </SectionLink>
+                . Every subscription comes with a 30-day money-back guarantee.
               </p>
             </div>
           </div>

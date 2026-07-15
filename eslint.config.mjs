@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Local reference dumps, not part of the app source:
+    "sister-repo/**",
   ]),
 ]);
 

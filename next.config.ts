@@ -12,6 +12,45 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ["lucide-react", "framer-motion"],
   },
+  async redirects() {
+    return [
+      {
+        source: "/blog/iptv-vs-sky-comparison",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
+        source: "/blog/premier-league-streaming-guide",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
+        source: "/iptv-free-trial",
+        destination: "/#pricing",
+        permanent: true,
+      },
+    ];
+  },
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          {
+            key: "Strict-Transport-Security",
+            value: "max-age=63072000; includeSubDomains; preload",
+          },
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "X-Frame-Options", value: "SAMEORIGIN" },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+          {
+            key: "Permissions-Policy",
+            value: "geolocation=(), camera=(), microphone=(), payment=()",
+          },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;

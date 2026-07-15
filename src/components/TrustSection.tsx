@@ -1,8 +1,6 @@
-"use client";
-
-import { motion } from "framer-motion";
 import { Shield, Wifi, Lock, ServerCog } from "lucide-react";
 import Link from "next/link";
+import MotionReveal from "@/components/motion/MotionReveal";
 
 const trustItems = [
   {
@@ -13,15 +11,15 @@ const trustItems = [
   },
   {
     icon: Wifi,
-    title: "99.9% Uptime On Strong IPTV Infrastructure",
+    title: "Built For UK-Relevant Scheduling",
     description:
-      "Our public status page tracks performance minute by minute. If uptime dips below 99.9% in any calendar month, service credits apply automatically.",
+      "The service is tuned for peak weekend windows and evening prime-time. If a stream fails to deliver, our support team credits or refunds at your request.",
   },
   {
     icon: Lock,
-    title: "Built-In VPN — Premium IPTV Privacy At No Extra Cost",
+    title: "Optional Secure Proxy Add-On For Privacy",
     description:
-      "The VPN encrypts every stream from the moment you press play. No bandwidth cap, no logs and no separate subscription — privacy ships as standard.",
+      "Add the Secure Proxy tunnel from £4.75 per term when you want an extra layer of encryption around your streams. No bandwidth cap, no logs — entirely opt-in.",
   },
   {
     icon: ServerCog,
@@ -37,12 +35,7 @@ export default function TrustSection() {
       <div className="absolute inset-0 section-gradient-2" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0, margin: "0px 0px 200px 0px" }}
-          className="text-center mb-16"
-        >
+        <MotionReveal className="text-center mb-16">
           <span className="inline-block rounded-full bg-emerald-50 border border-emerald-200 px-4 py-1.5 text-sm font-medium text-emerald-700 mb-4">
             Four Guarantees You Can Verify
           </span>
@@ -56,24 +49,17 @@ export default function TrustSection() {
               same-day refund
             </Link>.
           </p>
-        </motion.div>
+        </MotionReveal>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {trustItems.map((item, i) => (
-            <motion.div
-              key={item.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0, margin: "0px 0px 200px 0px" }}
-              transition={{ delay: i * 0.1 }}
-              className="group text-center"
-            >
+            <MotionReveal key={item.title} delay={i * 0.1} className="group text-center">
               <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl border border-emerald-100 bg-gradient-to-br from-emerald-50 to-cyan-50 transition-all group-hover:border-emerald-200 group-hover:bg-emerald-100 group-hover:shadow-lg group-hover:shadow-emerald-100/50">
                 <item.icon className="h-7 w-7 text-emerald-600" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">{item.title}</h3>
               <p className="text-sm text-muted leading-relaxed">{item.description}</p>
-            </motion.div>
+            </MotionReveal>
           ))}
         </div>
       </div>
