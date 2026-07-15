@@ -23,11 +23,11 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "British IPTV 2026 | Premium IPTV UK Service From £12.99/mo",
+    default: "British IPTV 2026 | Premium IPTV UK Service From £8.66/mo",
     template: "%s | British IPTV 4K",
   },
   description:
-    "British IPTV built for UK homes. 37,000 channels, 4K UHD, built-in VPN, 24/7 support. Fast activation, strong servers. Buy IPTV from £12.99. 30-day refund.",
+    "British IPTV built for UK homes. 37,000 channels, 4K UHD, built-in VPN, 24/7 support. Fast activation, strong servers. Buy IPTV from £8.66/month. 30-day refund.",
   keywords: [
     "british iptv",
     "iptv uk",
@@ -75,13 +75,22 @@ export const metadata: Metadata = {
     url: SITE_URL,
     title: "British IPTV 2026 — Best IPTV UK | Buy Premium IPTV Direct",
     description:
-      "The British IPTV service trusted by 50,000 UK households. 37,000 channels, 198,000 films, 4K streaming, VPN included and a cheap IPTV subscription from £12.99.",
+      "The British IPTV service trusted by 50,000 UK households. 37,000 channels, 198,000 films, 4K streaming, VPN included and a cheap IPTV subscription from £8.66/month.",
+    images: [
+      {
+        url: "/british-iptv.webp",
+        width: 1024,
+        height: 1024,
+        alt: "British IPTV 4K logo",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "British IPTV 2026 — Best IPTV UK | Buy Premium IPTV Direct",
     description:
-      "British IPTV for UK homes. 37,000 channels, 4K UHD, built-in VPN, 24/7 support. Fast activation, strong servers. Buy IPTV from £12.99. 30-day refund.",
+      "British IPTV for UK homes. 37,000 channels, 4K UHD, built-in VPN, 24/7 support. Fast activation, strong servers. Buy IPTV from £8.66/mo. 30-day refund.",
+    images: ["/british-iptv.webp"],
   },
   robots: {
     index: true,

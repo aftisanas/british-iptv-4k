@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//home/iptv-uk-4k/htdocs/iptv-uk-4k.com/**)",
+      "Bash(sudo -u iptv-uk-4k bash -lc 'source ~/.nvm/nvm.sh && nvm use 22 2>&1 | tail -1 && command -v pm2 && pm2 -v && pm2 ls')",
+      "Bash(sudo -u iptv-uk-4k git status)",
+      "Bash(sudo -u iptv-uk-4k git log -1 --oneline)",
+      "Bash(curl -skI -H \"Host: iptv-uk-4k.com\" http://127.0.0.1)",
+      "Bash(dig +short iptv-uk-4k.com)",
+      "Bash(dig +short www.iptv-uk-4k.com)",
+      "Bash(curl -skI https://iptv-uk-4k.com)",
+      "Bash(openssl s_client -servername iptv-uk-4k.com -connect iptv-uk-4k.com:443)"
+    ]
+  }
+}

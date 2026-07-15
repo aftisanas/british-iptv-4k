@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Mail, MapPin } from "lucide-react";
-import { NAV_LINKS, LEGAL_LINKS, SITE_NAME, CONTACT_EMAIL } from "@/lib/constants";
+import { NAV_LINKS, LEGAL_LINKS, GUIDE_LINKS, SITE_NAME, CONTACT_EMAIL } from "@/lib/constants";
 import SectionLink from "@/components/SectionLink";
 
 export default function Footer() {
@@ -11,13 +11,13 @@ export default function Footer() {
     <footer className="relative border-t border-violet-100/50 bg-gradient-to-b from-[#fafbff] to-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Main footer */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 py-10 sm:py-14 lg:py-16 lg:max-w-5xl lg:mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 py-10 sm:py-14 lg:py-16">
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2.5 mb-4">
               <div className="relative h-12 w-12 shrink-0">
                 <Image
-                  src="/cheap-iptv.webp"
+                  src="/british-iptv.webp"
                   alt="British IPTV 4K logo"
                   fill
                   sizes="48px"
@@ -30,7 +30,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-sm text-muted leading-relaxed mb-6">
-              The British IPTV service trusted by 50,000 UK households. 37,000 live channels, 198,000 films and series, native 4K UHD and built-in VPN — from £12.99/month.
+              The British IPTV service trusted by 50,000 UK households. 37,000 live channels, 198,000 films and series, native 4K UHD and built-in VPN — from £8.66/month.
             </p>
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-sm text-muted">
@@ -58,6 +58,25 @@ export default function Footer() {
                   >
                     {link.label}
                   </SectionLink>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* IPTV Guides */}
+          <div className="lg:justify-self-center">
+            <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-4">
+              IPTV Guides
+            </h3>
+            <ul className="space-y-3">
+              {GUIDE_LINKS.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-muted transition-colors hover:text-violet-600"
+                  >
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>
