@@ -11,7 +11,9 @@
       "Bash(curl -skI https://iptv-uk-4k.com)",
       "Bash(openssl s_client -servername iptv-uk-4k.com -connect iptv-uk-4k.com:443)",
       "Bash(npm run *)",
-      "Bash(npx --no-install next lint)"
+      "Bash(npx --no-install next lint)",
+      "Bash(curl -s http://localhost:3000/sitemap.xml)",
+      "Bash(node -e \"process.env.NODE_ENV='production'; import\\('./src/app/sitemap.ts'\\).then\\(m=>console.log\\(JSON.stringify\\(m.default\\(\\), null, 2\\)\\)\\)\")"
     ]
   }
 }

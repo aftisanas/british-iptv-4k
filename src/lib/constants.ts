@@ -358,7 +358,18 @@ export const CHANNEL_CATEGORIES = [
   },
 ] as const;
 
-export const BLOG_POSTS = [
+type BlogPost = {
+  slug: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  updated: string;
+  readTime: string;
+  category: string;
+  relatedSlugs?: readonly string[];
+};
+
+export const BLOG_POSTS: readonly BlogPost[] = [
   {
     slug: "best-iptv-uk-guide-2026",
     title: "Best IPTV UK 2026 — Top 5 Ways To Stream British TV Compared",
@@ -378,5 +389,53 @@ export const BLOG_POSTS = [
     updated: "2026-03-20",
     readTime: "6 min read",
     category: "Tutorial",
+  },
+  {
+    slug: "is-iptv-legal-uk",
+    title: "Is IPTV Legal In The UK? A Plain-English Guide To The Legal Framework",
+    excerpt:
+      "Whether IPTV is legal in the UK depends on the source, not the technology. A plain-English guide to the UK legal framework, backed by primary sources.",
+    date: "2026-07-16",
+    updated: "2026-07-16",
+    readTime: "10 min read",
+    category: "guides",
+    relatedSlugs: [
+      "how-to-choose-best-iptv-provider-uk",
+      "how-iptv-works-uk",
+      "best-iptv-uk-guide-2026",
+      "how-to-setup-iptv-firestick",
+    ],
+  },
+  {
+    slug: "how-to-choose-best-iptv-provider-uk",
+    title: "How To Choose The Best IPTV Provider In The UK — A Buyer's Framework",
+    excerpt:
+      "Choosing the best IPTV provider in the UK depends on seven concrete criteria — not on a marketing ranking. A framework UK buyers can apply to any service.",
+    date: "2026-07-16",
+    updated: "2026-07-16",
+    readTime: "11 min read",
+    category: "guides",
+    relatedSlugs: [
+      "best-iptv-uk-guide-2026",
+      "is-iptv-legal-uk",
+      "how-iptv-works-uk",
+      "how-to-setup-iptv-firestick",
+    ],
+  },
+  {
+    slug: "how-iptv-works-uk",
+    title: "How IPTV Works — A Plain-English Guide For UK Viewers",
+    excerpt:
+      "IPTV is television delivered over the internet rather than through an aerial, satellite dish, or cable. Here's how it works, and what UK viewers should know.",
+    date: "2026-07-16",
+    updated: "2026-07-16",
+    readTime: "10 min read",
+    category: "guides",
+    relatedSlugs: [
+      "how-to-choose-best-iptv-provider-uk",
+      "is-iptv-legal-uk",
+      "how-to-setup-iptv-firestick",
+      "best-iptv-uk-guide-2026",
+    ],
   },
 ] as const;

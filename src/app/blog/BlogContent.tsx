@@ -7,6 +7,7 @@ import { BLOG_POSTS } from "@/lib/constants";
 
 const categoryColors: Record<string, string> = {
   Guide: "bg-primary/10 text-primary border border-primary/10",
+  guides: "bg-primary/10 text-primary border border-primary/10",
   Tutorial: "bg-accent/10 text-accent border border-accent/10",
   Comparison: "bg-amber-50 text-amber-700 border border-amber-200",
   Sports: "bg-emerald-50 text-emerald-700 border border-emerald-200",
